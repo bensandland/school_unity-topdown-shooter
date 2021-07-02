@@ -8,6 +8,7 @@ public class SoundController : MonoBehaviour
     static AudioSource source;
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         shootSound = Resources.Load<AudioClip>("light-gun");
         source = GetComponent<AudioSource>();
     }
