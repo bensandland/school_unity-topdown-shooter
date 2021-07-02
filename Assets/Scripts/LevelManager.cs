@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PointScript.instance.GetTotal() >= 500)
+        if (PointScript.instance.GetTotal() >= 100)
         {
             LoadNextLevel();
         }

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PointScript : MonoBehaviour
 {
+    public GameObject pointCanvas;
     public static PointScript instance;
 
     public Text pointUI;
@@ -13,11 +14,13 @@ public class PointScript : MonoBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(pointCanvas);
         instance = this;
     }
 
     private void Start()
     {
+        DontDestroyOnLoad(gameObject);
         pointUI.text = "Points: " + totalPoints.ToString();
     }
 

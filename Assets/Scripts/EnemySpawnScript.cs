@@ -15,7 +15,7 @@ public class EnemySpawnScript : MonoBehaviour
 
     void Start()
     {
-
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

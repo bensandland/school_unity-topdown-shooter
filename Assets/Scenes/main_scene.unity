@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3dacc2b4f87774b97a70e03dfe66d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointCanvas: {fileID: 726666281}
   pointUI: {fileID: 1725478335}
 --- !u!4 &134812895
 Transform:
