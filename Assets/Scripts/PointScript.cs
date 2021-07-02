@@ -26,4 +26,9 @@ public class PointScript : MonoBehaviour
         totalPoints += points;
         pointUI.text = "Points: " + totalPoints.ToString();
     }
+
+    public int GetTotal()
+    {
+        return totalPoints;
+    }
 }

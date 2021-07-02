@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         transform.position = new Vector3(0, 0, 0);
         body = GetComponent<Rigidbody2D>();
     }
